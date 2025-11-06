@@ -29,7 +29,8 @@ def average_of_squares(list_of_numbers, list_of_weights=None):
         for number, weight
         in zip(list_of_numbers, effective_weights)
     ]
-    return sum(squares)
+    average_squares = sum(squares) / len(list_of_numbers)
+    return average_squares
 
 
 def convert_numbers(list_of_strings):
